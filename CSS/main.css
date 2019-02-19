@@ -1,0 +1,152 @@
+.menu {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #0d0d0d;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+.menuContent {
+  display: none;
+}
+.menu .menuIcons {
+  list-style: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.menuIcons li a{
+  color: #4e4e4e;
+  font-size: 30px;
+  transition: all 1s;
+}
+.menuIcons li a.active{
+  color: white;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.menuIcons li a:hover{
+  text-decoration: none;
+}
+.menuIcons li a:not(.active):hover{
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+}
+
+.header {
+    background-image: url(../IMG/choose.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    padding: 0px;
+    z-index: 4;
+}
+
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .8;
+    z-index: 3;
+}
+
+#text-changing1 {
+
+}
+#text-changing2 {
+    display: none;
+}
+
+.jumbo-controls {
+    position: relative;
+    z-index: 4;
+}
+.jumbo-controls h1 {
+    padding: 120px 0px 30px;
+    font-weight: bold;
+}
+.jumbo-controls p {
+    line-height: 1.5;
+    margin: 0px;
+}
+.jumbo-controls ul {
+/*    margin: 40px 0px 50px;*/
+}
+.socialIcons li {
+    margin-right: 15px;
+    margin-left: 15px;
+/*    cursor: pointer;*/
+    transition: all 1s;
+}
+.socialIcons li:hover {
+    transform: scale(2);
+}
+
+
+.jumbo-controls .floating-text {
+    animation: animi-float 3s infinite;
+}
+@keyframes animi-float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fixed-top {
+    z-index: 3;
+}
+
+.content {
+    background: #FFF;
+    position: relative;
+    z-index: 2;
+}
+
+.content .title::after {
+    content: "\f4d6";
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    display: block;
+    margin: 20px 0px 0px;
+    color: #6f6f6f;
+}
+.content .speacial {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.footer {
+    padding: 40px 0px 20px;
+    background: rgba(221, 221, 221, 0);
+    margin: 0px;
+}
+.footer p {
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.footer ul {
+    margin-top: 8px;
+}
+.fixed-bottom {
+    z-index: 1;
+}
+
+.end {
+    height: 160px;
+    width: 100%;
+    background: #222222;
+}
